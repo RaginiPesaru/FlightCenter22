@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		255BAE8A48384C52AF9FD40C /* Pods_FlightCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AA6B145FBDAB0C6616C135 /* Pods_FlightCenter.framework */; };
+		72F5A3CD2011B5C300ED2452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5A3CC2011B5C300ED2452 /* AppDelegate.swift */; };
+		72F5A3D22011B5C300ED2452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F5A3D02011B5C300ED2452 /* Main.storyboard */; };
+		72F5A3DF2011B99500ED2452 /* FlightHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F5A3DE2011B99500ED2452 /* FlightHeaderView.xib */; };
+		72F5A3E12011B9A700ED2452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F5A3E02011B9A700ED2452 /* Assets.xcassets */; };
+		72F5A3E32011B9B300ED2452 /* FlightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5A3E22011B9B300ED2452 /* FlightVC.swift */; };
+		72F5A3E52011BA2200ED2452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F5A3E42011BA2100ED2452 /* LaunchScreen.storyboard */; };
+		72F5A3EC2011BB4100ED2452 /* WebServiceCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5A3EB2011BB4100ED2452 /* WebServiceCalls.swift */; };
+		72F5A3F02011BC2500ED2452 /* CommonInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5A3EE2011BC2500ED2452 /* CommonInstance.swift */; };
+		72F5A3F52011C2F000ED2452 /* ACProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5A3F12011C2EF00ED2452 /* ACProgressView.swift */; };
+		72F5A3F62011C2F000ED2452 /* ACProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F5A3F22011C2EF00ED2452 /* ACProgressView.xib */; };
+		72F5A3F72011C2F000ED2452 /* ACProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5A3F32011C2F000ED2452 /* ACProgressHUD.swift */; };
+		72F5A3F82011C2F000ED2452 /* ACHUD+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5A3F42011C2F000ED2452 /* ACHUD+Animation.swift */; };
+		72F5A3FA2011C45600ED2452 /* SVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5A3F92011C45600ED2452 /* SVConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15AA6B145FBDAB0C6616C135 /* Pods_FlightCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlightCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		316CDF5028A04FC44C7264A7 /* Pods-FlightCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlightCenter/Pods-FlightCenter.release.xcconfig"; sourceTree = "<group>"; };
+		72F5A3C92011B5C300ED2452 /* FlightCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F5A3CC2011B5C300ED2452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72F5A3D12011B5C300ED2452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72F5A3D82011B5C300ED2452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F5A3DE2011B99500ED2452 /* FlightHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightHeaderView.xib; sourceTree = "<group>"; };
+		72F5A3E02011B9A700ED2452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72F5A3E22011B9B300ED2452 /* FlightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightVC.swift; sourceTree = "<group>"; };
+		72F5A3E42011BA2100ED2452 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72F5A3EA2011BB0C00ED2452 /* Flight-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flight-Header.h"; sourceTree = "<group>"; };
+		72F5A3EB2011BB4100ED2452 /* WebServiceCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceCalls.swift; sourceTree = "<group>"; };
+		72F5A3EE2011BC2500ED2452 /* CommonInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonInstance.swift; sourceTree = "<group>"; };
+		72F5A3F12011C2EF00ED2452 /* ACProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACProgressView.swift; sourceTree = "<group>"; };
+		72F5A3F22011C2EF00ED2452 /* ACProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACProgressView.xib; sourceTree = "<group>"; };
+		72F5A3F32011C2F000ED2452 /* ACProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACProgressHUD.swift; sourceTree = "<group>"; };
+		72F5A3F42011C2F000ED2452 /* ACHUD+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ACHUD+Animation.swift"; sourceTree = "<group>"; };
+		72F5A3F92011C45600ED2452 /* SVConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVConstants.swift; sourceTree = "<group>"; };
+		95BB26CC88D402E8BA22BCC9 /* Pods-FlightCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlightCenter/Pods-FlightCenter.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72F5A3C62011B5C300ED2452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255BAE8A48384C52AF9FD40C /* Pods_FlightCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F1A6BAFB9B56B276C85CF26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15AA6B145FBDAB0C6616C135 /* Pods_FlightCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72F5A3C02011B5C300ED2452 = {
+			isa = PBXGroup;
+			children = (
+				72F5A3CB2011B5C300ED2452 /* FlightCenter */,
+				72F5A3CA2011B5C300ED2452 /* Products */,
+				73F5900CCA4F7424DAA98A84 /* Pods */,
+				2F1A6BAFB9B56B276C85CF26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		72F5A3CA2011B5C300ED2452 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72F5A3C92011B5C300ED2452 /* FlightCenter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72F5A3CB2011B5C300ED2452 /* FlightCenter */ = {
+			isa = PBXGroup;
+			children = (
+				72F5A3D02011B5C300ED2452 /* Main.storyboard */,
+				72F5A3E42011BA2100ED2452 /* LaunchScreen.storyboard */,
+				72F5A3DE2011B99500ED2452 /* FlightHeaderView.xib */,
+				72F5A3FC2011C6D100ED2452 /* ViewController */,
+				72F5A3FD2011C6E900ED2452 /* Support */,
+				72F5A3FB2011C69800ED2452 /* HUD */,
+				72F5A3D82011B5C300ED2452 /* Info.plist */,
+				72F5A3CC2011B5C300ED2452 /* AppDelegate.swift */,
+				72F5A3E02011B9A700ED2452 /* Assets.xcassets */,
+			);
+			path = FlightCenter;
+			sourceTree = "<group>";
+		};
+		72F5A3FB2011C69800ED2452 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				72F5A3EA2011BB0C00ED2452 /* Flight-Header.h */,
+				72F5A3F92011C45600ED2452 /* SVConstants.swift */,
+				72F5A3F42011C2F000ED2452 /* ACHUD+Animation.swift */,
+				72F5A3F32011C2F000ED2452 /* ACProgressHUD.swift */,
+				72F5A3F12011C2EF00ED2452 /* ACProgressView.swift */,
+				72F5A3F22011C2EF00ED2452 /* ACProgressView.xib */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		72F5A3FC2011C6D100ED2452 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72F5A3E22011B9B300ED2452 /* FlightVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		72F5A3FD2011C6E900ED2452 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				72F5A3EE2011BC2500ED2452 /* CommonInstance.swift */,
+				72F5A3EB2011BB4100ED2452 /* WebServiceCalls.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		73F5900CCA4F7424DAA98A84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95BB26CC88D402E8BA22BCC9 /* Pods-FlightCenter.debug.xcconfig */,
+				316CDF5028A04FC44C7264A7 /* Pods-FlightCenter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72F5A3C82011B5C300ED2452 /* FlightCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F5A3DB2011B5C300ED2452 /* Build configuration list for PBXNativeTarget "FlightCenter" */;
+			buildPhases = (
+				51E9216B325987EE56D945F6 /* [CP] Check Pods Manifest.lock */,
+				72F5A3C52011B5C300ED2452 /* Sources */,
+				72F5A3C62011B5C300ED2452 /* Frameworks */,
+				72F5A3C72011B5C300ED2452 /* Resources */,
+				DDD21C47388899475E47FD8F /* [CP] Embed Pods Frameworks */,
+				F490893253EA9C7B9C6DFFF8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightCenter;
+			productName = FlightCenter;
+			productReference = 72F5A3C92011B5C300ED2452 /* FlightCenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72F5A3C12011B5C300ED2452 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ragini pesaru";
+				TargetAttributes = {
+					72F5A3C82011B5C300ED2452 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 72F5A3C42011B5C300ED2452 /* Build configuration list for PBXProject "FlightCenter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72F5A3C02011B5C300ED2452;
+			productRefGroup = 72F5A3CA2011B5C300ED2452 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72F5A3C82011B5C300ED2452 /* FlightCenter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72F5A3C72011B5C300ED2452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F5A3D22011B5C300ED2452 /* Main.storyboard in Resources */,
+				72F5A3F62011C2F000ED2452 /* ACProgressView.xib in Resources */,
+				72F5A3E52011BA2200ED2452 /* LaunchScreen.storyboard in Resources */,
+				72F5A3E12011B9A700ED2452 /* Assets.xcassets in Resources */,
+				72F5A3DF2011B99500ED2452 /* FlightHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51E9216B325987EE56D945F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlightCenter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD21C47388899475E47FD8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlightCenter/Pods-FlightCenter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlightCenter/Pods-FlightCenter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F490893253EA9C7B9C6DFFF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlightCenter/Pods-FlightCenter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72F5A3C52011B5C300ED2452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F5A3F82011C2F000ED2452 /* ACHUD+Animation.swift in Sources */,
+				72F5A3E32011B9B300ED2452 /* FlightVC.swift in Sources */,
+				72F5A3FA2011C45600ED2452 /* SVConstants.swift in Sources */,
+				72F5A3F02011BC2500ED2452 /* CommonInstance.swift in Sources */,
+				72F5A3F52011C2F000ED2452 /* ACProgressView.swift in Sources */,
+				72F5A3EC2011BB4100ED2452 /* WebServiceCalls.swift in Sources */,
+				72F5A3CD2011B5C300ED2452 /* AppDelegate.swift in Sources */,
+				72F5A3F72011C2F000ED2452 /* ACProgressHUD.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72F5A3D02011B5C300ED2452 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72F5A3D12011B5C300ED2452 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72F5A3D92011B5C300ED2452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72F5A3DA2011B5C300ED2452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72F5A3DC2011B5C300ED2452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BB26CC88D402E8BA22BCC9 /* Pods-FlightCenter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETUBG55P24;
+				INFOPLIST_FILE = FlightCenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Raginipesaru-Pvt-Ltd.FlightCenter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72F5A3DD2011B5C300ED2452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316CDF5028A04FC44C7264A7 /* Pods-FlightCenter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETUBG55P24;
+				INFOPLIST_FILE = FlightCenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Raginipesaru-Pvt-Ltd.FlightCenter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72F5A3C42011B5C300ED2452 /* Build configuration list for PBXProject "FlightCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F5A3D92011B5C300ED2452 /* Debug */,
+				72F5A3DA2011B5C300ED2452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F5A3DB2011B5C300ED2452 /* Build configuration list for PBXNativeTarget "FlightCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F5A3DC2011B5C300ED2452 /* Debug */,
+				72F5A3DD2011B5C300ED2452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72F5A3C12011B5C300ED2452 /* Project object */;
+}

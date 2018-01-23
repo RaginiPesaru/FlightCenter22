@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="quicksand_regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlightHeaderView" customModule="FlightCenter" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="U7y-7U-Yb9" customClass="FlightHeaderView" customModule="FlightCenter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmd-6J-KQb" userLabel="contentView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-5q-lyA">
+                            <rect key="frame" x="20" y="0.0" width="180" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="JDm-h9-TWX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNC-PV-Fsv">
+                            <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="SXp-By-K7E"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ww7-oK-ELV">
+                            <rect key="frame" x="222" y="0.0" width="90" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="R3d-tB-4OF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1843137255" green="0.44705882349999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Deb-5q-lyA" firstAttribute="top" secondItem="Pmd-6J-KQb" secondAttribute="top" id="81Y-rA-oKc"/>
+                        <constraint firstAttribute="trailing" secondItem="Ww7-oK-ELV" secondAttribute="trailing" constant="8" id="8au-at-9bf"/>
+                        <constraint firstAttribute="bottom" secondItem="Deb-5q-lyA" secondAttribute="bottom" id="GU5-gN-K2V"/>
+                        <constraint firstAttribute="bottom" secondItem="Ww7-oK-ELV" secondAttribute="bottom" id="Ws9-In-av4"/>
+                        <constraint firstItem="Deb-5q-lyA" firstAttribute="leading" secondItem="Pmd-6J-KQb" secondAttribute="leading" constant="20" id="Zbw-Mk-vGz"/>
+                        <constraint firstItem="ZNC-PV-Fsv" firstAttribute="leading" secondItem="Pmd-6J-KQb" secondAttribute="leading" id="kz1-g0-LQY"/>
+                        <constraint firstAttribute="trailing" secondItem="ZNC-PV-Fsv" secondAttribute="trailing" id="nF8-Oh-4Wr"/>
+                        <constraint firstItem="Ww7-oK-ELV" firstAttribute="top" secondItem="Pmd-6J-KQb" secondAttribute="top" id="pHu-90-r1s"/>
+                        <constraint firstAttribute="bottom" secondItem="ZNC-PV-Fsv" secondAttribute="bottom" id="qHM-Qe-k3S"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Pmd-6J-KQb" firstAttribute="leading" secondItem="U7y-7U-Yb9" secondAttribute="leading" id="FS3-Xq-hFY"/>
+                <constraint firstAttribute="trailing" secondItem="Pmd-6J-KQb" secondAttribute="trailing" id="IqP-EB-H7U"/>
+                <constraint firstAttribute="bottom" secondItem="Pmd-6J-KQb" secondAttribute="bottom" constant="6" id="aDT-Fk-AeH"/>
+                <constraint firstItem="Pmd-6J-KQb" firstAttribute="top" secondItem="U7y-7U-Yb9" secondAttribute="top" id="qDG-sE-jpX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblLeftTitle" destination="Deb-5q-lyA" id="75n-zf-8Qo"/>
+                <outlet property="lblRightTitle" destination="Ww7-oK-ELV" id="KLZ-8U-VFl"/>
+                <outlet property="mainView" destination="Pmd-6J-KQb" id="D5M-Fk-IWe"/>
+            </connections>
+            <point key="canvasLocation" x="-19" y="-80"/>
+        </view>
+    </objects>
+</document>
